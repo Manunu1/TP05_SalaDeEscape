@@ -1,15 +1,19 @@
 namespace TP05_SalaDeEscape;
+using Newtonsoft.Json;
 
 public class Juego
 {
-    public int numeroSala = 1;
-    public int numeroVidas = 3;
-    public Dictionary <int, string> respuestas;
+    [JsonProperty]
+    public int numeroSala {get; private set;}  
+    [JsonProperty]
+    public int numeroVidas {get; private set;} 
+    [JsonProperty]
+    public Dictionary <int, string> respuestas {get; private set;}
     public void inicializar()
     {
         respuestas = new Dictionary<int, string>();
         respuestas.Add(1, "6531");
-        respuestas.Add(2, "arriba derecha izquierda abajo");
+        respuestas.Add(2, "arriba, derecha, izquierda, abajo");
         respuestas.Add(3, "9135");
         numeroVidas = 3;
         numeroSala = 1;
@@ -24,9 +28,12 @@ public class Juego
         bool aux = false;
         if(comparacion != respuestas[numeroSala]){
             aux = false;
+            perderVida();
         }
-        else{
+        else
+        {
             aux = true;
+            agregarSala();
         }
         return aux;
     }   

@@ -1,1 +1,29 @@
-<p>@ViewBag.Mensaje</p>
+<body>
+<main>
+    <section class="seccionSala2">
+        
+        <div >
+
+        <h1> SALA 2 </h1>
+        
+        
+        <p>Tenés que pasar el sistema de seguridad antes de llegar a la bóveda. Por información que habías descubierto anteriormente, sabes que algunas baldosas del piso tienen sensores que hacen sonar la alarma. Nuevamente, sabés que la información de como atravesar el sistema se encuentra escondida en la sala.</p>
+        <p>Aclaración: la respuesta es una combinación de pasos a dar, por ejemplo: "arriba, abajo, izquierda, derecha", seperados por comas y todo en minúscula</p>
+        
+        </div>
+
+        <img src="" alt="Sala 2 imagen">
+        
+        <form action='@Url.Action("verResultado", "Home")' method="POST" enctype="multipart/form-data">
+            <input type = "text" name="codigoRecibido">
+            <input class = "arriesgar" type="submit" value="Ingresar código">
+        </form>
+        
+        
+        
+        <p>@ViewBag.Mensaje</p>
+        
+        </section>
+        
+</main>    
+</body>

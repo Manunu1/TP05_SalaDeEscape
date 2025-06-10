@@ -21,3 +21,16 @@ footer {
   background-color: #f8f9fa;
   border-top: 1px solid #e9ecef;
 }
+.seccionSala2{
+  padding: 3%;
+}
+.seccionSala2 main{
+  background-color: beige;
+}
+.seccionSala2 p{
+  margin-bottom: 1%;
+}
+.seccionSala2 h1{
+  
+  text-align: center;
+}

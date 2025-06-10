@@ -1,12 +1,21 @@
 ﻿@{
     ViewData["Title"] = "Index";
 }
-
+<h1> SALA 1 </h1>
 <div>
-
-<form action='@Url.Action("verResultado", "Home")' method="ACTION" enctype="multipart/form-data">
-    <input type = "text" maxlength="4" name="codigo">
+<p>Llegaste al banco, estás en la árte de atras, en el callejón que tiene la puerta trasera. Para desbloquearla, necesitas un código de 4 digitos, escondido en algún lugar de la estrecha calle...</p>
+<form action='@Url.Action("verResultado", "Home")' method="POST" enctype="multipart/form-data">
+    <input type = "text" maxlength="4" name="codigoRecibido">
     <input class = "arriesgar" type="submit" value="Ingresar código">
 </form>
+<p>@ViewBag.Mensaje</p>
 
 </div>
+
+@*
+no se como es esv
+que
+
+
+si dale
+*@
