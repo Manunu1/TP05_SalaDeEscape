@@ -1,4 +1,4 @@
-
+        using Newtonsoft.Json;
         public static class Objeto{
         public static string ObjectToString<T>(T? obj){
             return JsonConvert.SerializeObject(obj);

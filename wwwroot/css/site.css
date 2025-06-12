@@ -31,6 +31,27 @@ footer {
   margin-bottom: 1%;
 }
 .seccionSala2 h1{
-  
+  font-size: x-large;
   text-align: center;
+}
+.boton1
+{
+    margin-left: 14%;
+    margin-top: 5%;
+}
+.boton2
+{
+    margin-left: 56.7%;
+    padding-bottom: 1%;
+}
+.boton3
+{
+    margin-top:26%;
+    margin-left: 14.5%;
+    padding-top: 1%;
+}
+.boton4
+{
+    margin-left: 56%;
+    padding-bottom: 0.4%;
 }
