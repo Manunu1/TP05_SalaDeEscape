@@ -1,9 +1,7 @@
 <h1> SALA 3 </h1>
 <p>¡Bien hecho! Atravesaron el sistema de seguridad, ahora, en su camino a la bóveda tomaron rehenes a cuatro guardias nocturnos. Les pedís que te digan el código para abrir la bóveda, peor hay un problema. Solo dos dicen la verdad, y los otros dos mienten.</p>
-<p>El primer guardia dice: El primer número es 1</p>
-<p>El segundo guardia dice: El último número es 5</p>
-<p>El tercer guardia dice: El código es 1935</p>
-<p>El cuarto guardia dice: El código es 9135</p>
+<img src="@Url.Content("~/imagenes/sala3.png")" alt="Sala 3 imagen">
+
 <form action='@Url.Action("verResultado", "Home")' method="POST" enctype="multipart/form-data">
     <input type = "text" maxlength="4" name="codigoRecibido">
     <input class = "arriesgar" type="submit" value="Ingresar código">
