@@ -34,7 +34,7 @@ public class HomeController : Controller
 
         if(codigoRecibido == null)
         {
-            ViewBag.Mensaje = "No ingresó el codigo";
+            ViewBag.Mensaje g "No ingresó el codigo";
         }
 
         else if (juego.comparar(codigoRecibido) == false)

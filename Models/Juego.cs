@@ -12,9 +12,10 @@ public class Juego
     public void inicializar()
     {
         respuestas = new Dictionary<int, string>();
-        respuestas.Add(1, "6531");
+        respuestas.Add(1, "2499");
         respuestas.Add(2, "arriba, derecha, izquierda, abajo");
         respuestas.Add(3, "9135");
+        respuestas.Add(4, "1234");
         respuestas.Add(5, "JUAN B. AMBROSETTI");
         numeroVidas = 3;
         numeroSala = 1;
