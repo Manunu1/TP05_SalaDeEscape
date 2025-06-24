@@ -1,13 +1,7 @@
+<body class = "sala4">
 <link rel="stylesheet" href="style.css">
 <h1> SALA 4 </h1>
 <p>Lograron entrar a la bóveda pero ahora tiene que escapar. Por miedo a disparar la alarma deciden escapar por la ventilación de aire. Agarras el destornillador de la mochila y te acercas a la ventilación, pero hay un problema. ¡No sabés en que orden desatornillar los tornillos! De alguna manera tenés que lograr desatornillar la ventilación, pero cuidado, porque cuanto más tiempo pasa, más chances hay de que suene la alarma.</p>
-<img src="@Url.Content("~/imagenes/sala4.png")" alt="Sala 4 imagen" usemap ="#ventilacion">
-<map name="ventilacion">
-    <area href="#"  coords="44,209,18" shape="circle" id="area1">
-    <area href="#"  coords="160,62,15" shape="circle" id="area2">
-    <area href="#"  coords="406,116,16" shape="circle" id="area3">
-    <area href="#"  coords="337,288,20" shape="circle" id="area4">
-</map>
 
 <form action='@Url.Action("verResultado", "Home")' method="post">
     <input type="text" name="codigoRecibido" id="numeroRecibido" value="">
@@ -20,24 +14,25 @@
     <a href='@Url.Action("verResultado", "Home", new {codigoRecibido = @ViewBag.codigo})'>Sillas</a>
 }
 <script>
-     document.getElementById('area1').onclick = function(event) 
+     document.getElementById('area1').onclick = function(event)
      {
         event.preventDefault(); // evita el comportamiento por defecto (seguir el href)
         document.getElementById("numeroRecibido").value = document.getElementById("numeroRecibido").value + '1';
      }
-     document.getElementById('area2').onclick = function(event) 
+     document.getElementById('area2').onclick = function(event)
      {
         event.preventDefault(); // evita el comportamiento por defecto (seguir el href)
         document.getElementById("numeroRecibido").value = document.getElementById("numeroRecibido").value + '2';
      }
-     document.getElementById('area3').onclick = function(event) 
+     document.getElementById('area3').onclick = function(event)
      {
         event.preventDefault(); // evita el comportamiento por defecto (seguir el href)
         document.getElementById("numeroRecibido").value = document.getElementById("numeroRecibido").value + '3';
      }
-     document.getElementById('area4').onclick = function(event) 
+     document.getElementById('area4').onclick = function(event)
      {
         event.preventDefault(); // evita el comportamiento por defecto (seguir el href)
         document.getElementById("numeroRecibido").value = document.getElementById("numeroRecibido").value + '4';
      }
 </script>
+</body>

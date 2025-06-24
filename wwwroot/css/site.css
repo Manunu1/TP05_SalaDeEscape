@@ -55,3 +55,39 @@ footer {
     margin-left: 56%;
     padding-bottom: 0.4%;
 }
+.sala1 {
+  background-color: black;
+  background-image: url('/imagenes/sala1.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h1
+{
+  color: white;
+}
+p
+{
+  color: white;
+}
+.sala2 {
+  background-color: black;
+  background-image: url('/imagenes/sala2.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sala3 {
+  background-color: black;
+  background-image: url('/imagenes/sala3.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sala4 {
+  background-color: black;
+  background-image: url('/imagenes/sala4.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

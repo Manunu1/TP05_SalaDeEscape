@@ -1,9 +1,10 @@
+<body class = "sala3">
 <h1> SALA 3 </h1>
 <p>¡Bien hecho! Atravesaron el sistema de seguridad, ahora, en su camino a la bóveda tomaron rehenes a cuatro guardias nocturnos. Les pedís que te digan el código para abrir la bóveda, peor hay un problema. Solo dos dicen la verdad, y los otros dos mienten.</p>
-<img src="@Url.Content("~/imagenes/sala3.png")" alt="Sala 3 imagen">
 
 <form action='@Url.Action("verResultado", "Home")' method="POST" enctype="multipart/form-data">
     <input type = "text" maxlength="4" name="codigoRecibido">
     <input class = "arriesgar" type="submit" value="Ingresar código">
 </form>
 <p>@ViewBag.Mensaje</p>
+</body>

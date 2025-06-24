@@ -1,10 +1,10 @@
-﻿@{
+﻿<body class = "sala1">
+@{
     ViewData["Title"] = "Index";
 }
 <h1> SALA 1 </h1>
 <div>
 <p>Llegaste al banco, estás en la árte de atras, en el callejón que tiene la puerta trasera. Para desbloquearla, necesitas un código de 4 digitos, escondido en algún lugar de la estrecha calle... Para encontrarlo, vas a tener que escribir el número más bajo, luego su doble, y por ultimo, repetir dos veces el número más alto</p>
-<img src="imagenes/sala1.png" alt="Sala 1 imagen">
 <p>@ViewBag.Mensaje</p>
 <form action='@Url.Action("verResultado", "Home")' method="POST" enctype="multipart/form-data">
     <input type = "text" maxlength="4" name="codigoRecibido">
@@ -13,7 +13,7 @@
 
 
 </div>
-
+</body>
 @*
 no se como es esv
 que
