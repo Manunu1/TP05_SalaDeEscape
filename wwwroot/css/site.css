@@ -2,7 +2,6 @@ html {
   font-size: 14px;
   min-height: 100%;
 }
-
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -86,8 +85,86 @@ p
 }
 .sala4 {
   background-color: black;
-  background-image: url('/imagenes/sala4.png');
+}
+.sala4 img
+{
+  margin-left: 35%;
+}
+.sala5
+{
+  background-image: url('/imagenes/sala5.webp');
+}
+.sala5 iframe
+{
+  margin-top: 6%;
+} 
+ul li
+{
+  color: white;
+}
+.ganaste
+{
+  background-image: url('/imagenes/ganaste.webp');
   background-size: contain;
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
+}
+.perdiste
+{
+  background-image: url('/imagenes/perdiste.webp');
+}
+button {
+  font-size: 17px;
+  padding: 1em 2.7em;
+  font-weight: 500;
+  background: #1f2937;
+  color: white;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.6em;
+  cursor: pointer;
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 0.6em;
+  margin-top: -0.25em;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3)
+  );
+}
+
+.label {
+  position: relative;
+  top: -1px;
+}
+
+.transition {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 500ms;
+  background-color: rgba(16, 185, 129, 0.6);
+  border-radius: 9999px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button:hover .transition {
+  width: 14em;
+  height: 14em;
+}
+
+button:active {
+  transform: scale(0.97);
 }

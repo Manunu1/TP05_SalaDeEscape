@@ -47,12 +47,15 @@ public class HomeController : Controller
         }
         else
         {
-            ViewBag.Mensaje = "Muy bien, pasaste a la siguiente sala";
+            ViewBag.Mensaje = "";
             AQueView ="Sala"+ juego.numeroSala;
         }
 
             HttpContext.Session.SetString("Juego", Objeto.ObjectToString(juego));
             return View(AQueView);
     }
-
+    public IActionResult Perdiste()
+    {
+        return View("VistaPerdedor");
+    }
 }

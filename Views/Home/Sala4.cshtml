@@ -3,6 +3,14 @@
 <h1> SALA 4 </h1>
 <p>Lograron entrar a la bóveda pero ahora tiene que escapar. Por miedo a disparar la alarma deciden escapar por la ventilación de aire. Agarras el destornillador de la mochila y te acercas a la ventilación, pero hay un problema. ¡No sabés en que orden desatornillar los tornillos! De alguna manera tenés que lograr desatornillar la ventilación, pero cuidado, porque cuanto más tiempo pasa, más chances hay de que suene la alarma.</p>
 
+<img src="@Url.Content("~/imagenes/sala4.png")" alt="Sala 4 imagen" usemap ="#ventilacion">
+<map name="ventilacion">
+    <area href="#"  coords="44,209,18" shape="circle" id="area1">
+    <area href="#"  coords="160,62,15" shape="circle" id="area2">
+    <area href="#"  coords="406,116,16" shape="circle" id="area3">
+    <area href="#"  coords="337,288,20" shape="circle" id="area4">
+</map>
+
 <form action='@Url.Action("verResultado", "Home")' method="post">
     <input type="text" name="codigoRecibido" id="numeroRecibido" value="">
     <input type="submit" value="Enviar">
@@ -34,5 +42,20 @@
         event.preventDefault(); // evita el comportamiento por defecto (seguir el href)
         document.getElementById("numeroRecibido").value = document.getElementById("numeroRecibido").value + '4';
      }
+</script>
+<p id="temporizador">Tiempo restante: 30 segundos</p>
+<script>
+    let segundos = 30;
+
+    let intervalo = setInterval(function () {
+        segundos--;
+        document.getElementById("temporizador").textContent = "Tiempo restante: " + segundos + " segundos";
+
+        if (segundos <= 0) {
+            clearInterval(intervalo);
+            // Redirigir automáticamente a la página "Perdiste"
+            window.location.href = "/Home/Perdiste";
+        }
+    }, 1000); // Cada segundo
 </script>
 </body>
