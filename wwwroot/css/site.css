@@ -113,6 +113,10 @@ ul li
 .perdiste
 {
   background-image: url('/imagenes/perdiste.webp');
+  background-size: contain;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 button {
   font-size: 17px;
@@ -167,4 +171,13 @@ button:hover .transition {
 
 button:active {
   transform: scale(0.97);
+}
+
+.intro
+{
+  background-image: url('/imagenes/banco.webp');
+  background-size: contain;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
 }
