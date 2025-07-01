@@ -18,9 +18,12 @@ public class HomeController : Controller
         Juego juego = new Juego();
         juego.inicializar();
         HttpContext.Session.SetString("Juego", Objeto.ObjectToString(juego));
-        return View("Sala1");
+        return View("Introducción");
     }
-
+    public IActionResult primeraSala()
+    {
+        return View ("Sala1");
+    }
 
     public IActionResult verResultado(string codigoRecibido)
     {
